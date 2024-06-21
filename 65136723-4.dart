@@ -1,0 +1,20 @@
+void main() {
+  int factorial(int n) {
+    if (n == 0) {
+      return 1;
+    } else {
+      return n * factorial(n - 1);
+    }
+  }
+
+
+  int n = 5; 
+  if (n <= 0) {
+    print("Please enter a valid positive integer.");
+    return;
+  }
+
+  int result = factorial(n);
+
+  print("The factorial of $n is: $result");
+}
